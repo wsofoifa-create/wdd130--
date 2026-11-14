@@ -1,0 +1,244 @@
+
+/* General page styles */
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F9FC;
+    color: #1a1919;
+}
+
+/* Header */
+header {
+    background-color: #1F3A5F;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    padding: 20px;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #4F8A9B;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #DCEAF0;
+}
+
+/* Main content */
+main {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+/* Main layout and sidebar */
+.page-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.main-column {
+    min-width: 0;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    border: 1px solid #DCEAF0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #1F3A5F;
+    margin-top: 0;
+}
+
+/* Welcome section */
+.welcome {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.welcome img {
+    width: 40%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.welcome div {
+    flex: 3;
+}
+
+.button {
+    display: inline-block;
+    background-color: #1F3A5F;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #4F8A9B;
+}
+
+/* Section of About Me and Goals */
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.two-columns section {
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+/* The Sidebar */
+aside section {
+    background-color: #DCEAF0;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+aside a {
+    color: #1F3A5F;
+}
+
+/* Classes table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #B8C9D9;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #DCEAF0;
+    color: #1F3A5F;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #B8C9D9;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+button {
+    background-color: #1F3A5F;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4F8A9B;
+}
+
+/* Footer */
+footer {
+    background-color: #1F3A5F;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Small screens */
+@media screen and (max-width: 700px) {
+    .page-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .welcome img {
+        width: 100%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}

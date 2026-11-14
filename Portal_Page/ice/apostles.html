@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            background-color: #e8eeee;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .spotlight {
+            max-width: 710px;
+            min-height: 550px;
+            margin: 0 auto;
+            padding: 15px 20px 25px;
+            border: 6px solid black;
+            border-radius: 32px;
+            background:
+                linear-gradient(
+                    rgba(0, 35, 90, 0.2),
+                    rgba(0, 35, 90, 0.2)
+                ),
+                url("images/christus.webp") center / cover;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: normal;
+            margin: 0 0 12px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: normal;
+            margin: 12px ;
+        }
+
+        .presidency,
+        .apostles {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .person {
+            width: 84px;
+            height: 84px;
+            border: 6px solid white;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: white;
+        }
+
+        .presidency .person {
+            width: 108px;
+            height: 108px;
+        }
+
+        .presidency .person:first-child,
+        .presidency .person:last-child {
+            width: 102px;
+            height: 102px;
+        }
+
+        .apostles {
+            max-width: 400px;
+            margin: 0 auto;
+            gap: 22px 18px;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .spotlight {
+                padding: 18px 10px;
+                border-radius: 24px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .presidency {
+                gap: 8px;
+            }
+
+            .presidency .person,
+            .presidency .person:first-child,
+            .presidency .person:last-child {
+                width: 82px;
+                height: 82px;
+            }
+
+            .apostles {
+                gap: 14px;
+            }
+
+            .apostles .person {
+                width: 72px;
+                height: 72px;
+                border-width: 4px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="spotlight">
+
+        <h1>First Presidency</h1>
+
+        <section class="presidency">
+
+            <img class="person"
+                 src="images/eyring.webp"
+                 alt="First Presidency member">
+
+            <img class="person"
+                 src="images/oaks.webp"
+                 alt="First Presidency member">
+
+            <img class="person"
+                 src="images/christofferson.webp"
+                 alt="First Presidency member">
+
+        </section>
+
+        <h2>Quorum of the Twelve Apostles</h2>
+
+        <section class="apostles">
+
+            <img class="person" src="images/christus.webp" alt="Apostle1">
+            <img class="person" src="images/bednar.webp" alt="Apostle2">
+            <img class="person" src="images/cook.webp" alt="Apostle3">
+            <img class="person" src="images/anderson.webp" alt="Apostle4">
+
+            <img class="person" src="images/rasband.webp" alt="Apostle5">
+            <img class="person" src="images/stevenson.webp" alt="Apostle6">
+            <img class="person" src="images/renlund.webp" alt="Apostle7">
+            <img class="person" src="images/gong.webp" alt="Apostle8">
+
+            <img class="person" src="images/soares.webp" alt="Apostle9">
+            <img class="person" src="images/kearon.webp" alt="Apostle10">
+            <img class="person" src="images/causse.webp" alt="Apostle11">
+            <img class="person" src="images/gilbert.webp" alt="Apostle12">
+
+        </section>
+
+    </main>
+
+</body>
+</html>

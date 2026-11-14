@@ -1,0 +1,100 @@
+
+
+body {
+margin: 0;
+background-color: #120d1f;
+color: #f4e8ff;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+max-width: 1000px;
+margin: 0 auto;
+background-color: #211532;
+box-shadow: 0 0 20px #7b2cbf;
+}
+
+/* Navigation bar */
+header {
+background-color: #4b1d75;
+padding: 15px;
+border-bottom: 8px solid #ff7518;
+}
+
+nav ul {
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 20px;
+margin: 0;
+}
+
+nav li {
+color: #b8ff3b;
+font-size: 20px;
+font-weight: bold;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+nav li {
+color: #ff7518;
+}
+
+/* Main heading */
+main {
+padding: 15px;
+}
+
+h1 {
+text-align: left;
+color: #ff7518;
+font-size: 50px;
+text-transform: uppercase;
+text-shadow: 3px 3px 5px #000000;
+letter-spacing: 3px;
+}
+
+/* Halloween image */
+main img {
+display: block;
+width: 60%;
+max-width: 500px;
+height: auto;
+margin: 35px auto;
+border: 5px solid #b8ff3b;
+border-radius: 30px;
+box-shadow: 0 0 20px #8628d8;
+}
+
+/* Content sections */
+section {
+background-color: #a46fca;
+margin: 25px 0;
+padding: 20px;
+border: 2px solid #6a328a;
+border-left: 8px solid #ff7518;
+border-radius: 12px;
+}
+
+h2 {
+color: #b3ff30;
+font-size: 28px;
+text-shadow: 2px 2px 4px #0e0b0b;
+}
+
+p {
+font-size: 17px;
+color: #f4e8ff;
+}
+
+/* Footer */
+footer {
+background-color: #4b1d75;
+color: #ff6804;
+text-align: center;
+padding: 30px;
+font-size: 18px;
+font-weight: bold;
+border-top: 4px solid #b8ff3b;
+}
